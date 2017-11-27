@@ -1,0 +1,116 @@
+// *
+// 	box-sizing: border-box
+// 	margin: 0
+// 	padding: 0
+// 	&:before, &:after
+// 		box-sizing: border-box
+
+// html, body
+// 	height: 100%
+
+// body
+// 	font-size: 16px
+// 	position: relative
+// 	line-height: 1.65
+// 	font-family: SiroLight
+// 	overflow-x: hidden
+// 	opacity: 1
+
+// .text-center
+// 	text-align: center
+h2
+	font-family: $h2
+	font-size: 40px
+	margin: 20px 0
+h3
+	font-family: $h3
+	font-size: 30px
+	margin: 0
+h4		
+	font-family: $h4
+	font-size: 18px
+p
+	font-family: $text	
+	font-size: 16px
+	margin: 0
+
+ul
+	list-style: none
+	display: flex
+	flex-direction: row
+	li
+		padding: 10px
+
+a
+	font-family: $h4
+	text-decoration: none
+	color: black
+	cursor: pointer
+	display: block
+	&:hover
+		color: white
+
+section
+	width: 100%
+	height: auto
+	position: relative
+	margin: 60px 0px
+
+.row
+	width: 100%
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: space-between
+
+.column
+	display: flex
+	flex-direction: column
+
+.text-90
+	display: block
+	transform: rotate(-90deg)
+	margin: 0
+
+.wrapper
+	height: 100%
+	display: flex
+	margin: auto
+	flex-direction: column
+	max-width: $wr
+	padding: 0px 20px
+
+
+.wrapper-right
+	@extend .wrapper
+	background-color: $accent
+	margin: 0	
+	padding: 0
+	margin-left: auto
+	max-width: 95%
+
+.icon
+	width: 18px
+	height: 18px
+	margin: 10px
+
+//Div for img
+.img
+	width: auto
+	height: auto
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center;
+	// margin: 15px
+
+.frame
+	border: 2px solid black
+	padding: 0.5em
+	text-align: center
+	margin: 0
+	z-index: 1
+
+.description
+	@extend h4
+	margin: 20px 0px
+	text-align: right
